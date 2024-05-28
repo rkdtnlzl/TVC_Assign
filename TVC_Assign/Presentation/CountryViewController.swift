@@ -15,7 +15,7 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        countryTableView.rowHeight = 120
+        countryTableView.rowHeight = 140
         countryTableView.delegate = self
         countryTableView.dataSource = self
         
@@ -28,7 +28,7 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
         countryTableView.register(nibName1, forCellReuseIdentifier: "AdTableViewCell")
         
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.travel.count
     }
@@ -37,26 +37,8 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "CountryTableViewCell", for: indexPath) as! CountryTableViewCell
         
         let data = list.travel[indexPath.row]
-        
-        if data.ad == true {
-            let cell1 = tableView.dequeueReusableCell(withIdentifier: "AdTableViewCell", for: indexPath) as! AdTableViewCell
-            
-            print(indexPath)
-            
-            return cell1
-        }
-        
-//        cell.setConfigure()
         cell.cellConfigure(data: data)
-        
-        if data.ad == true {
-            let cell1 = tableView.dequeueReusableCell(withIdentifier: "AdTableViewCell", for: indexPath) as! AdTableViewCell
-            
-            return cell
-        }
-                
         
         return cell
     }
-    
 }

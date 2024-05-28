@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 class CountryTableViewCell: UITableViewCell {
-
+    
     @IBOutlet var countryImageView: UIImageView!
     @IBOutlet var loveButton: UIButton!
     @IBOutlet var titleLabel: UILabel!
@@ -22,7 +22,7 @@ class CountryTableViewCell: UITableViewCell {
     }
     
     func setConfigure() {
-        titleLabel.font = .boldSystemFont(ofSize: 17)
+        titleLabel.font = .boldSystemFont(ofSize: 15)
         subtitleLabel.font = .systemFont(ofSize: 13)
         subtitleLabel.textColor = .lightGray
         countryImageView.backgroundColor = .gray
@@ -36,5 +36,15 @@ class CountryTableViewCell: UITableViewCell {
         subtitleLabel.text = data.description
         let url = URL(string: data.travel_image ?? "")
         countryImageView.kf.setImage(with: url, placeholder: UIImage(systemName: "camera"))
+        
+        if data.ad {
+            backgroundColor = .yellow
+            countryImageView.isHidden = true
+            loveButton.isHidden = true
+        } else {
+            backgroundColor = .white
+            countryImageView.isHidden = false
+            loveButton.isHidden = false
+        }
     }
 }

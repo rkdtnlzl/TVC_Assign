@@ -25,8 +25,6 @@
 		019B3BD52C04A6B300E4F624 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B3BD32C04A6B300E4F624 /* CountryTableViewCell.swift */; };
 		019B3BD62C04A6B300E4F624 /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 019B3BD42C04A6B300E4F624 /* CountryTableViewCell.xib */; };
 		019B3BD82C04B18000E4F624 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B3BD72C04B18000E4F624 /* TravelModel.swift */; };
-		019B3BDB2C04C5CD00E4F624 /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B3BD92C04C5CD00E4F624 /* AdTableViewCell.swift */; };
-		019B3BDC2C04C5CD00E4F624 /* AdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 019B3BDA2C04C5CD00E4F624 /* AdTableViewCell.xib */; };
 		019B3BDE2C05584700E4F624 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B3BDD2C05584700E4F624 /* UILabel+Extension.swift */; };
 		01B6337C2C05FC7800C2E598 /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B6337A2C05FC7800C2E598 /* TravelTableViewCell.swift */; };
 		01B6337D2C05FC7800C2E598 /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B6337B2C05FC7800C2E598 /* TravelTableViewCell.xib */; };
@@ -53,8 +51,6 @@
 		019B3BD32C04A6B300E4F624 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		019B3BD42C04A6B300E4F624 /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
 		019B3BD72C04B18000E4F624 /* TravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
-		019B3BD92C04C5CD00E4F624 /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
-		019B3BDA2C04C5CD00E4F624 /* AdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdTableViewCell.xib; sourceTree = "<group>"; };
 		019B3BDD2C05584700E4F624 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		01B6337A2C05FC7800C2E598 /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
 		01B6337B2C05FC7800C2E598 /* TravelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
@@ -154,8 +150,6 @@
 			children = (
 				019B3BD32C04A6B300E4F624 /* CountryTableViewCell.swift */,
 				019B3BD42C04A6B300E4F624 /* CountryTableViewCell.xib */,
-				019B3BD92C04C5CD00E4F624 /* AdTableViewCell.swift */,
-				019B3BDA2C04C5CD00E4F624 /* AdTableViewCell.xib */,
 			);
 			path = Country;
 			sourceTree = "<group>";
@@ -224,7 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				019B3BDC2C04C5CD00E4F624 /* AdTableViewCell.xib in Resources */,
 				019B3BD62C04A6B300E4F624 /* CountryTableViewCell.xib in Resources */,
 				018B25562BFF284000CFE307 /* Assets.xcassets in Resources */,
 				01B6337D2C05FC7800C2E598 /* TravelTableViewCell.xib in Resources */,
@@ -250,7 +243,6 @@
 				01B633832C06006500C2E598 /* TravelViewController.swift in Sources */,
 				019B3BBC2C00BCDD00E4F624 /* ShoppingTableViewController.swift in Sources */,
 				01B6337C2C05FC7800C2E598 /* TravelTableViewCell.swift in Sources */,
-				019B3BDB2C04C5CD00E4F624 /* AdTableViewCell.swift in Sources */,
 				019B3BC02C032DDF00E4F624 /* ShoppingTableViewCell.swift in Sources */,
 				018B254F2BFF283E00CFE307 /* SceneDelegate.swift in Sources */,
 				019B3BC42C033ACA00E4F624 /* MagazineInfo.swift in Sources */,
