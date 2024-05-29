@@ -22,7 +22,6 @@ class CountryTableViewCell: UITableViewCell {
     }
     
     func setConfigure() {
-        titleLabel.font = .boldSystemFont(ofSize: 15)
         subtitleLabel.font = .systemFont(ofSize: 13)
         subtitleLabel.textColor = .lightGray
         countryImageView.backgroundColor = .gray
@@ -39,10 +38,12 @@ class CountryTableViewCell: UITableViewCell {
         
         if data.ad {
             backgroundColor = .yellow
+            titleLabel.font = .boldSystemFont(ofSize: 17)
             countryImageView.isHidden = true
             loveButton.isHidden = true
         } else {
             backgroundColor = .white
+            titleLabel.font = .boldSystemFont(ofSize: 15)
             countryImageView.isHidden = false
             loveButton.isHidden = false
         }

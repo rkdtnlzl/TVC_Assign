@@ -41,9 +41,9 @@
                         <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitleLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtm-sE-Hxi">
-                        <rect key="frame" x="16" y="76" width="199" height="16"/>
+                        <rect key="frame" x="16" y="22" width="199" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="16" id="hfb-iy-5Z3"/>
+                            <constraint firstAttribute="height" constant="35" id="hfb-iy-5Z3"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -59,7 +59,7 @@
                     <constraint firstItem="REb-Qa-tx5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="aEo-5f-oi4"/>
                     <constraint firstItem="i4Z-sl-Fye" firstAttribute="leading" secondItem="REb-Qa-tx5" secondAttribute="trailing" constant="8" id="ffD-iF-xfY"/>
                     <constraint firstItem="i4Z-sl-Fye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="pVW-1n-GD4"/>
-                    <constraint firstAttribute="bottom" secondItem="Mtm-sE-Hxi" secondAttribute="bottom" constant="5" id="toa-Bo-3tn"/>
+                    <constraint firstAttribute="bottom" secondItem="Mtm-sE-Hxi" secondAttribute="bottom" constant="40" id="toa-Bo-3tn"/>
                     <constraint firstItem="REb-Qa-tx5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="utC-Ud-xDo"/>
                     <constraint firstItem="viP-7i-jMG" firstAttribute="top" secondItem="i4Z-sl-Fye" secondAttribute="top" id="zfA-7L-ZrB"/>
                 </constraints>

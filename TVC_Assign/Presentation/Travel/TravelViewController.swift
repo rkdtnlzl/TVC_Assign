@@ -39,7 +39,4 @@ class TravelViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         return cell
     }
-    
-
-
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yQR-cs-9i3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zhC-GL-Na6">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -9,21 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TVC_Assign" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="140" y="4"/>
-        </scene>
         <!--집중 모드-->
         <scene sceneID="6fH-FG-Q2M">
             <objects>
@@ -187,7 +172,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEw-4e-K01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058.7786259541983" y="662.67605633802816"/>
+            <point key="canvasLocation" x="-60" y="991"/>
         </scene>
         <!--쇼핑-->
         <scene sceneID="JIC-IL-FuY">
@@ -292,7 +277,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHF-aX-rMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3362.5954198473282" y="661.97183098591552"/>
+            <point key="canvasLocation" x="2245" y="991"/>
         </scene>
         <!--Restaurant Table View Controller-->
         <scene sceneID="070-d6-w0T">
@@ -371,7 +356,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCw-9k-4S7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4634.3511450381675" y="661.97183098591552"/>
+            <point key="canvasLocation" x="3517" y="991"/>
         </scene>
         <!--도시 상세 정보-->
         <scene sceneID="EN3-rC-6ep">
@@ -409,6 +394,36 @@
             </objects>
             <point key="canvasLocation" x="7098.4732824427474" y="661.97183098591552"/>
         </scene>
+        <!--Country Detail View Controller-->
+        <scene sceneID="UzJ-0g-qtS">
+            <objects>
+                <viewController storyboardIdentifier="CountryDetailViewController" id="1HV-gA-pHC" customClass="CountryDetailViewController" customModule="TVC_Assign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q6W-m7-3R0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mf0-Qh-fYB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nY9-za-ia3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8258" y="506"/>
+        </scene>
+        <!--Ad View Controller-->
+        <scene sceneID="VuR-7e-gHg">
+            <objects>
+                <viewController storyboardIdentifier="AdViewController" id="G7x-gT-60w" customClass="AdViewController" customModule="TVC_Assign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jAG-9S-9nz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="pIJ-Vg-BKW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMJ-vk-g2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8243" y="1180"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="luv-v1-di5">
             <objects>
@@ -425,7 +440,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UZ-fR-MlR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132.06106870229007" y="662.67605633802816"/>
+            <point key="canvasLocation" x="-985" y="991"/>
         </scene>
         <!--설정-->
         <scene sceneID="oOf-cZ-6SI">
@@ -463,7 +478,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaG-gb-Cd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051.145038167939" y="1365.4929577464789"/>
+            <point key="canvasLocation" x="-66" y="1694"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nws-9r-Jmv">
@@ -481,7 +496,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1V-Bq-9df" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124.42748091603053" y="1365.4929577464789"/>
+            <point key="canvasLocation" x="-993" y="1694"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="orT-JB-2i3">
@@ -499,7 +514,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NwC-Ic-FxS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2435.8778625954196" y="661.97183098591552"/>
+            <point key="canvasLocation" x="1318" y="991"/>
         </scene>
         <!--SeSAC TRAVEL-->
         <scene sceneID="CsD-nD-kxh">
@@ -530,7 +545,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wR7-Em-VbP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5142.7480916030536" y="1366.9014084507044"/>
+            <point key="canvasLocation" x="6379" y="2135"/>
+        </scene>
+        <!--인기 도시-->
+        <scene sceneID="WAx-iT-fwJ">
+            <objects>
+                <viewController storyboardIdentifier="PopularCityViewController" id="mti-IQ-qaO" customClass="PopularCityViewController" customModule="TVC_Assign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XBX-Ms-m60">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VVd-ef-3ih">
+                                <rect key="frame" x="0.0" y="158" width="393" height="694"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CCv-HD-Psk">
+                                <rect key="frame" x="44" y="115" width="305" height="32"/>
+                                <segments>
+                                    <segment title="모두"/>
+                                    <segment title="국내"/>
+                                    <segment title="해외"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlSelected:" destination="mti-IQ-qaO" eventType="valueChanged" id="jsF-Cz-pZr"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Q8-Oa-5lI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Q8-Oa-5lI" firstAttribute="trailing" secondItem="CCv-HD-Psk" secondAttribute="trailing" constant="44" id="4zy-pg-0kk"/>
+                            <constraint firstItem="VVd-ef-3ih" firstAttribute="top" secondItem="1Q8-Oa-5lI" secondAttribute="top" constant="55" id="Nai-MS-WCW"/>
+                            <constraint firstItem="VVd-ef-3ih" firstAttribute="trailing" secondItem="1Q8-Oa-5lI" secondAttribute="trailing" id="XV8-B0-Ae3"/>
+                            <constraint firstItem="VVd-ef-3ih" firstAttribute="leading" secondItem="1Q8-Oa-5lI" secondAttribute="leading" id="fqv-Ur-ABP"/>
+                            <constraint firstItem="CCv-HD-Psk" firstAttribute="leading" secondItem="1Q8-Oa-5lI" secondAttribute="leading" constant="44" id="hal-QK-mnU"/>
+                            <constraint firstAttribute="bottom" secondItem="VVd-ef-3ih" secondAttribute="bottom" id="kCr-PH-4sW"/>
+                            <constraint firstItem="CCv-HD-Psk" firstAttribute="top" secondItem="1Q8-Oa-5lI" secondAttribute="top" constant="12" id="mhi-5X-SjY"/>
+                            <constraint firstItem="VVd-ef-3ih" firstAttribute="top" secondItem="CCv-HD-Psk" secondAttribute="bottom" constant="12" id="pGU-Za-CDc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="인기 도시" id="dgN-uh-DSo"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="CCv-HD-Psk" id="oMd-as-gWK"/>
+                        <outlet property="tableView" destination="VVd-ef-3ih" id="dHo-4B-Gap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fti-OC-gok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6420.6106870229005" y="2843.6619718309862"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8NJ-Wh-23V">
@@ -566,9 +628,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2e-tq-QKU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4216.0305343511445" y="1366.9014084507044"/>
+            <point key="canvasLocation" x="5454" y="2135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L5c-iw-SiR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zhC-GL-Na6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pZy-eq-u3b">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mti-IQ-qaO" kind="relationship" relationship="rootViewController" id="dHY-SL-TU1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFF-BX-8ni" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5453" y="2844"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="bed.double.fill" catalog="system" width="128" height="82"/>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>

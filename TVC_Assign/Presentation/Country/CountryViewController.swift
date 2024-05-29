@@ -41,4 +41,23 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let data = list.travel[indexPath.row]
+        
+        if data.ad {
+            let vc = storyboard?.instantiateViewController(identifier: "AdViewController") as! AdViewController
+            
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            present(nav, animated: true)
+            
+        } else {
+            let vc = storyboard?.instantiateViewController(identifier: "CountryDetailViewController") as! CountryDetailViewController
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
 }

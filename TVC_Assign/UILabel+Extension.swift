@@ -15,7 +15,6 @@ extension UILabel {
         self.textColor = .lightGray
         self.textAlignment = .left
         self.layer.cornerRadius = 10
-        
     }
     
 }
