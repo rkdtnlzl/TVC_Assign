@@ -19,9 +19,7 @@ class RestaurantTableViewController: UITableViewController, UISearchBarDelegate 
         super.viewDidLoad()
         
         tableView.rowHeight = 140
-        
         filteredList = list
-        
         searchBar.delegate = self
         
     }
@@ -57,9 +55,21 @@ class RestaurantTableViewController: UITableViewController, UISearchBarDelegate 
             tableView.reloadData()
             return
         }
-        
         filteredList = list.filter { $0.name.contains(searchText) }
         tableView.reloadData()
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let data = list[indexPath.row]
+        print(#function)
+        
+        let vc = storyboard?.instantiateViewController(identifier: "MapViewController") as! MapViewController
+        vc.data = data
+        navigationController?.pushViewController(vc, animated: true)
+        
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
+    
     
 }

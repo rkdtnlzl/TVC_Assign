@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yQR-cs-9i3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r8z-ha-n7n">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -279,7 +280,7 @@
             </objects>
             <point key="canvasLocation" x="2245" y="991"/>
         </scene>
-        <!--Restaurant Table View Controller-->
+        <!--영등포 식당-->
         <scene sceneID="070-d6-w0T">
             <objects>
                 <tableViewController id="TBw-5T-31g" customClass="RestaurantTableViewController" customModule="TVC_Assign" customModuleProvider="target" sceneMemberID="viewController">
@@ -350,13 +351,44 @@
                             <outlet property="delegate" destination="TBw-5T-31g" id="isB-kv-fdv"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="영등포 식당" id="Ldy-WR-c9G"/>
                     <connections>
                         <outlet property="searchBar" destination="BKa-rH-mEE" id="L1c-Se-etl"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCw-9k-4S7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3517" y="991"/>
+            <point key="canvasLocation" x="2799.2366412213742" y="2169.7183098591549"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Zbl-ZV-Zse">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="nSN-6q-ea9" customClass="MapViewController" customModule="TVC_Assign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hll-3D-7Gp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTU-rN-Rgw">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fzh-v3-QVm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rTU-rN-Rgw" firstAttribute="leading" secondItem="fzh-v3-QVm" secondAttribute="leading" id="dcV-fq-j2Z"/>
+                            <constraint firstItem="fzh-v3-QVm" firstAttribute="trailing" secondItem="rTU-rN-Rgw" secondAttribute="trailing" id="ffO-6s-gQG"/>
+                            <constraint firstItem="fzh-v3-QVm" firstAttribute="bottom" secondItem="rTU-rN-Rgw" secondAttribute="bottom" id="hcr-7U-OgG"/>
+                            <constraint firstItem="rTU-rN-Rgw" firstAttribute="top" secondItem="fzh-v3-QVm" secondAttribute="top" id="jfO-BU-Ff3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="rTU-rN-Rgw" id="l7R-Rp-Jce"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dg6-wH-nwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3828.2442748091603" y="2169.7183098591549"/>
         </scene>
         <!--도시 상세 정보-->
         <scene sceneID="EN3-rC-6ep">
@@ -615,7 +647,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wR7-Em-VbP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6379" y="2135"/>
+            <point key="canvasLocation" x="7304.5801526717551" y="2134.5070422535214"/>
         </scene>
         <!--인기 도시-->
         <scene sceneID="WAx-iT-fwJ">
@@ -698,7 +730,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2e-tq-QKU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5454" y="2135"/>
+            <point key="canvasLocation" x="6379.3893129770986" y="2134.5070422535214"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L5c-iw-SiR">
@@ -717,6 +749,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFF-BX-8ni" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5453" y="2844"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aAQ-gX-T2W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r8z-ha-n7n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EKu-Lc-DbS">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TBw-5T-31g" kind="relationship" relationship="rootViewController" id="EtG-ek-C1O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lM7-Rr-aRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872.5190839694656" y="2169.7183098591549"/>
         </scene>
     </scenes>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

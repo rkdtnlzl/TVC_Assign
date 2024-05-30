@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		012B58D52BFF63EC009ADF16 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B58D42BFF63EC009ADF16 /* SettingTableViewController.swift */; };
+		016B9B242C08B213009D2996 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B9B232C08B213009D2996 /* MapViewController.swift */; };
 		018B254D2BFF283E00CFE307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B254C2BFF283E00CFE307 /* AppDelegate.swift */; };
 		018B254F2BFF283E00CFE307 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B254E2BFF283E00CFE307 /* SceneDelegate.swift */; };
 		018B25512BFF283E00CFE307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B25502BFF283E00CFE307 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		012B58D42BFF63EC009ADF16 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		016B9B232C08B213009D2996 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		018B25492BFF283E00CFE307 /* TVC_Assign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVC_Assign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		018B254C2BFF283E00CFE307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		018B254E2BFF283E00CFE307 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				019B3BCD2C0363FB00E4F624 /* RestaurantTableViewController.swift */,
+				016B9B232C08B213009D2996 /* MapViewController.swift */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				01B633832C06006500C2E598 /* TravelViewController.swift in Sources */,
 				01B633912C07212C00C2E598 /* PopularCityViewController.swift in Sources */,
 				019B3BBC2C00BCDD00E4F624 /* ShoppingTableViewController.swift in Sources */,
+				016B9B242C08B213009D2996 /* MapViewController.swift in Sources */,
 				01B6337C2C05FC7800C2E598 /* TravelTableViewCell.swift in Sources */,
 				019B3BC02C032DDF00E4F624 /* ShoppingTableViewCell.swift in Sources */,
 				01B633942C0721BD00C2E598 /* PopularCityTableViewCell.swift in Sources */,
