@@ -20,11 +20,9 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
         countryTableView.dataSource = self
         
         let nibName = UINib(nibName: "CountryTableViewCell", bundle: nil)
-        
         countryTableView.register(nibName, forCellReuseIdentifier: "CountryTableViewCell")
         
         let nibName1 = UINib(nibName: "AdTableViewCell", bundle: nil)
-        
         countryTableView.register(nibName1, forCellReuseIdentifier: "AdTableViewCell")
         
     }
@@ -35,7 +33,6 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CountryTableViewCell", for: indexPath) as! CountryTableViewCell
-        
         let data = list.travel[indexPath.row]
         cell.cellConfigure(data: data)
         
@@ -52,9 +49,9 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
             present(nav, animated: true)
-            
         } else {
             let vc = storyboard?.instantiateViewController(identifier: "CountryDetailViewController") as! CountryDetailViewController
+            vc.data = data
             navigationController?.pushViewController(vc, animated: true)
         }
         

@@ -9,6 +9,8 @@ import UIKit
 
 class AdViewController: UIViewController {
     
+    @IBOutlet var adLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -16,6 +18,10 @@ class AdViewController: UIViewController {
         navigationItem.title = "광고"
         let back = UIBarButtonItem(image: UIImage(systemName: "chevron.backward"), style: .plain, target: self, action: #selector(dismissModal))
         navigationItem.leftBarButtonItem = back
+        
+        adLabel.text = "광고입니다!"
+        adLabel.textColor = .black
+        adLabel.font = .boldSystemFont(ofSize: 25)
     }
     
     @objc func dismissModal() {

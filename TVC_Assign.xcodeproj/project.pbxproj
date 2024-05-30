@@ -81,6 +81,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		016B9B1E2C089087009D2996 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				012B58D42BFF63EC009ADF16 /* SettingTableViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		016B9B1F2C089094009D2996 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				019B3BBB2C00BCDD00E4F624 /* ShoppingTableViewController.swift */,
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
+		016B9B202C0890A3009D2996 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				019B3BCD2C0363FB00E4F624 /* RestaurantTableViewController.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		016B9B212C0890B5009D2996 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				019B3BBF2C032DDF00E4F624 /* ShoppingTableViewCell.swift */,
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
+		016B9B222C0890BF009D2996 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				019B3BCF2C03671100E4F624 /* RestaurantTableViewCell.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
 		018B25402BFF283E00CFE307 = {
 			isa = PBXGroup;
 			children = (
@@ -129,10 +169,10 @@
 		019B3BCB2C03639000E4F624 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				016B9B222C0890BF009D2996 /* Restaurant */,
+				016B9B212C0890B5009D2996 /* Shopping */,
 				01B6337F2C05FCA000C2E598 /* Country */,
 				01B6337E2C05FC8500C2E598 /* Travel */,
-				019B3BBF2C032DDF00E4F624 /* ShoppingTableViewCell.swift */,
-				019B3BCF2C03671100E4F624 /* RestaurantTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -140,11 +180,11 @@
 		019B3BCC2C03639600E4F624 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				016B9B202C0890A3009D2996 /* Restaurant */,
+				016B9B1F2C089094009D2996 /* Shopping */,
+				016B9B1E2C089087009D2996 /* Setting */,
 				01B633882C07194200C2E598 /* Country */,
 				01B6338D2C071DE100C2E598 /* Travel */,
-				012B58D42BFF63EC009ADF16 /* SettingTableViewController.swift */,
-				019B3BBB2C00BCDD00E4F624 /* ShoppingTableViewController.swift */,
-				019B3BCD2C0363FB00E4F624 /* RestaurantTableViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
