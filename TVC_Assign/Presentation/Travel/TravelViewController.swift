@@ -35,7 +35,7 @@ class TravelViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "TravelTableViewCell", for: indexPath) as! TravelTableViewCell
         
         let data = list[indexPath.row]
-        cell.configureCell(data)
+        cell.configureCellData(data)
         
         return cell
     }

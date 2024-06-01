@@ -19,6 +19,32 @@ class PopularCityTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        configureCell()
+    }
+    
+    override func prepareForReuse() { //예외처리 구문
+        super.prepareForReuse()
+        
+        backgroundColor = .white
+        posterImageView.image = nil
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 12, right: 0))
+    }
+    
+    func configureCellData(_ data: City) {
+        
+        titleLabel.text = "\(data.city_name) | \(data.city_english_name)"
+        descriptionLabel.text = data.city_explain
+        let url = URL(string: data.city_image)
+        posterImageView.kf.setImage(with: url)
+    }
+    
+    func configureCell() {
+        
         titleLabel.font = .boldSystemFont(ofSize: 23)
         titleLabel.numberOfLines = 0
         titleLabel.textColor = .white
@@ -30,24 +56,5 @@ class PopularCityTableViewCell: UITableViewCell {
         posterImageView.backgroundColor = .gray
         posterImageView.contentMode = .scaleAspectFill
         posterImageView.layer.cornerRadius = 10
-        
-    }
-    
-    override func prepareForReuse() { //예외처리 구문
-        super.prepareForReuse()
-        backgroundColor = .white
-        posterImageView.image = nil
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 12, right: 0))
-    }
-    
-    func configureCell(_ data: City) {
-        titleLabel.text = "\(data.city_name) | \(data.city_english_name)"
-        descriptionLabel.text = data.city_explain
-        let url = URL(string: data.city_image)
-        posterImageView.kf.setImage(with: url)
     }
 }

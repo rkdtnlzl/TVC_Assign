@@ -69,15 +69,15 @@ extension PopularCityViewController: UITableViewDelegate, UITableViewDataSource 
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             let data = list[indexPath.row]
-            cell.configureCell(data)
+            cell.configureCellData(data)
             return cell
         case 1:
             let domesticData = domestic[indexPath.row]
-            cell.configureCell(domesticData)
+            cell.configureCellData(domesticData)
             return cell
         case 2:
             let internationalData = international[indexPath.row]
-            cell.configureCell(internationalData)
+            cell.configureCellData(internationalData)
             return cell
         default:
             break

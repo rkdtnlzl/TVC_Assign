@@ -21,6 +21,25 @@ class TravelTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        configureCell()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        backgroundColor = .white
+        posterImageView.image = nil
+    }
+    
+    func configureCellData(_ data: Magazine) {
+        titleLabel.text = data.title
+        descriptionLabel.text = data.subtitle
+        let url = URL(string: data.photo_image)
+        posterImageView.kf.setImage(with: url)
+        dateLabel.text = data.date
+    }
+    
+    func configureCell() {
+        
         titleLabel.font = .boldSystemFont(ofSize: 17)
         titleLabel.numberOfLines = 0
         titleLabel.textColor = .black
@@ -36,20 +55,6 @@ class TravelTableViewCell: UITableViewCell {
         dateLabel.font = .boldSystemFont(ofSize: 15)
         dateLabel.numberOfLines = 0
         dateLabel.textColor = .lightGray
-    }
-    
-    override func prepareForReuse() { //예외처리 구문
-        super.prepareForReuse()
-        backgroundColor = .white
-        posterImageView.image = nil
-    }
-    
-    func configureCell(_ data: Magazine) {
-        titleLabel.text = data.title
-        descriptionLabel.text = data.subtitle
-        let url = URL(string: data.photo_image)
-        posterImageView.kf.setImage(with: url)
-        dateLabel.text = data.date
     }
     
 }
