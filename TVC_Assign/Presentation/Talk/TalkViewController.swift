@@ -48,6 +48,14 @@ extension TalkViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(chat)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let data = chatRoom?.chatList[indexPath.row]
+        let vc = storyboard?.instantiateViewController(identifier: "ChattingRoomViewController") as! ChattingRoomViewController
+        vc.chatRoomNumber = indexPath.row + 2
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension TalkViewController: UISearchBarDelegate {

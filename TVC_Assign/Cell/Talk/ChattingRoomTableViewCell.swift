@@ -37,6 +37,8 @@ class ChattingRoomTableViewCell: UITableViewCell {
         message.text = data.message
         message.font = .systemFont(ofSize: 15)
         message.textColor = .darkGray
+        messageBox.layer.cornerRadius = 20
+        messageBox.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner]
     }
 
     

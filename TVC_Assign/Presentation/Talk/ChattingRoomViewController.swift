@@ -12,8 +12,10 @@ class ChattingRoomViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet var tableView: UITableView!
     
     var filteredList : [Chat] = []
-    let chatRoom = mockChatList.first { $0.chatroomId == 1 }
+    var chatRoomNumber = 0
     
+    lazy var chatRoom = mockChatList.first { $0.chatroomId ==  chatRoomNumber}
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,13 +28,13 @@ class ChattingRoomViewController: UIViewController, UITableViewDelegate, UITable
     }
 
     func setTableView() {
+        
         tableView.delegate = self
         tableView.dataSource = self
 
         tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableView.automaticDimension
-
-//        textView.delegate = self
+        tableView.separatorStyle = .none
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,6 +45,7 @@ class ChattingRoomViewController: UIViewController, UITableViewDelegate, UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChattingRoomTableViewCell", for: indexPath) as! ChattingRoomTableViewCell
         let chat =  filteredList[indexPath.row]
         cell.configure(chat)
+        cell
         return cell
     }
 }
