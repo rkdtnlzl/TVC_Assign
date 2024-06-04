@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="glz-5u-Bb4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dra-7u-qwd">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -693,6 +693,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PL9-rw-2PJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10907.633587786258" y="2178.8732394366198"/>
+        </scene>
+        <!--Chatting Room View Controller-->
+        <scene sceneID="1Ff-iJ-HKQ">
+            <objects>
+                <viewController storyboardIdentifier="ChattingRoomViewController" id="dra-7u-qwd" customClass="ChattingRoomViewController" customModule="TVC_Assign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jqJ-m4-HHH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nrC-iG-x9o">
+                                <rect key="frame" x="0.0" y="79" width="393" height="739"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Li-KI-IvK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nrC-iG-x9o" firstAttribute="bottom" secondItem="1Li-KI-IvK" secondAttribute="bottom" id="9nr-xf-wl4"/>
+                            <constraint firstItem="nrC-iG-x9o" firstAttribute="leading" secondItem="1Li-KI-IvK" secondAttribute="leading" id="Sxg-fg-TJf"/>
+                            <constraint firstItem="nrC-iG-x9o" firstAttribute="top" secondItem="1Li-KI-IvK" secondAttribute="top" constant="20" id="Vh3-gs-pMg"/>
+                            <constraint firstItem="nrC-iG-x9o" firstAttribute="trailing" secondItem="1Li-KI-IvK" secondAttribute="trailing" id="hNI-dw-lkc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="nrC-iG-x9o" id="zGS-du-rxn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mM-EY-SOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11887.786259541985" y="2193.6619718309862"/>
         </scene>
         <!--인기 도시-->
         <scene sceneID="WAx-iT-fwJ">

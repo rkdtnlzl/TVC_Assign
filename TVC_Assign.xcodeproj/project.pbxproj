@@ -13,6 +13,9 @@
 		016B9B392C0C8594009D2996 /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B9B382C0C8594009D2996 /* ChattingData.swift */; };
 		016B9B3D2C0C93AB009D2996 /* ChattingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016B9B3C2C0C93AB009D2996 /* ChattingListTableViewCell.xib */; };
 		016B9B3E2C0C93AB009D2996 /* ChattingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B9B3B2C0C93AB009D2996 /* ChattingListTableViewCell.swift */; };
+		016B9B6C2C0D9959009D2996 /* ChattingRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B9B6B2C0D9959009D2996 /* ChattingRoomViewController.swift */; };
+		016B9B6F2C0D9A4A009D2996 /* ChattingRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016B9B6E2C0D9A4A009D2996 /* ChattingRoomTableViewCell.xib */; };
+		016B9B702C0D9A4A009D2996 /* ChattingRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B9B6D2C0D9A4A009D2996 /* ChattingRoomTableViewCell.swift */; };
 		018B254D2BFF283E00CFE307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B254C2BFF283E00CFE307 /* AppDelegate.swift */; };
 		018B254F2BFF283E00CFE307 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B254E2BFF283E00CFE307 /* SceneDelegate.swift */; };
 		018B25512BFF283E00CFE307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B25502BFF283E00CFE307 /* ViewController.swift */; };
@@ -49,6 +52,9 @@
 		016B9B382C0C8594009D2996 /* ChattingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
 		016B9B3B2C0C93AB009D2996 /* ChattingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingListTableViewCell.swift; sourceTree = "<group>"; };
 		016B9B3C2C0C93AB009D2996 /* ChattingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingListTableViewCell.xib; sourceTree = "<group>"; };
+		016B9B6B2C0D9959009D2996 /* ChattingRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingRoomViewController.swift; sourceTree = "<group>"; };
+		016B9B6D2C0D9A4A009D2996 /* ChattingRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingRoomTableViewCell.swift; sourceTree = "<group>"; };
+		016B9B6E2C0D9A4A009D2996 /* ChattingRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingRoomTableViewCell.xib; sourceTree = "<group>"; };
 		018B25492BFF283E00CFE307 /* TVC_Assign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVC_Assign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		018B254C2BFF283E00CFE307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		018B254E2BFF283E00CFE307 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				016B9B362C0C854D009D2996 /* TalkViewController.swift */,
+				016B9B6B2C0D9959009D2996 /* ChattingRoomViewController.swift */,
 			);
 			path = Talk;
 			sourceTree = "<group>";
@@ -145,6 +152,8 @@
 			children = (
 				016B9B3B2C0C93AB009D2996 /* ChattingListTableViewCell.swift */,
 				016B9B3C2C0C93AB009D2996 /* ChattingListTableViewCell.xib */,
+				016B9B6D2C0D9A4A009D2996 /* ChattingRoomTableViewCell.swift */,
+				016B9B6E2C0D9A4A009D2996 /* ChattingRoomTableViewCell.xib */,
 			);
 			path = Talk;
 			sourceTree = "<group>";
@@ -323,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016B9B6F2C0D9A4A009D2996 /* ChattingRoomTableViewCell.xib in Resources */,
 				016B9B3D2C0C93AB009D2996 /* ChattingListTableViewCell.xib in Resources */,
 				01B633952C0721BD00C2E598 /* PopularCityTableViewCell.xib in Resources */,
 				019B3BD62C04A6B300E4F624 /* CountryTableViewCell.xib in Resources */,
@@ -357,11 +367,13 @@
 				01B6337C2C05FC7800C2E598 /* TravelTableViewCell.swift in Sources */,
 				019B3BC02C032DDF00E4F624 /* ShoppingTableViewCell.swift in Sources */,
 				01B633942C0721BD00C2E598 /* PopularCityTableViewCell.swift in Sources */,
+				016B9B702C0D9A4A009D2996 /* ChattingRoomTableViewCell.swift in Sources */,
 				018B254F2BFF283E00CFE307 /* SceneDelegate.swift in Sources */,
 				01B6338F2C07200800C2E598 /* CityInfo.swift in Sources */,
 				019B3BC42C033ACA00E4F624 /* MagazineInfo.swift in Sources */,
 				016B9B372C0C854D009D2996 /* TalkViewController.swift in Sources */,
 				019B3BD82C04B18000E4F624 /* TravelModel.swift in Sources */,
+				016B9B6C2C0D9959009D2996 /* ChattingRoomViewController.swift in Sources */,
 				01B6338C2C071A0C00C2E598 /* AdViewController.swift in Sources */,
 				019B3BD52C04A6B300E4F624 /* CountryTableViewCell.swift in Sources */,
 				019B3BD22C04A61100E4F624 /* CountryViewController.swift in Sources */,
