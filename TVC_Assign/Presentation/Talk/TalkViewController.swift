@@ -51,9 +51,9 @@ extension TalkViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let data = chatRoom?.chatList[indexPath.row]
+//        let data = chatRoom?.chatList[indexPath.row]
         let vc = storyboard?.instantiateViewController(identifier: "ChattingRoomViewController") as! ChattingRoomViewController
-        vc.chatRoomNumber = indexPath.row + 2
+        vc.filteredList = mockChatList[indexPath.row].chatList
         navigationController?.pushViewController(vc, animated: true)
     }
 }

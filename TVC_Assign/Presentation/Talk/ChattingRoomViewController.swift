@@ -6,32 +6,49 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import RxKeyboard
+import SnapKit
 
 class ChattingRoomViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var chatTextField: UITextField!
     
     var filteredList : [Chat] = []
     var chatRoomNumber = 0
     
-    lazy var chatRoom = mockChatList.first { $0.chatroomId ==  chatRoomNumber}
-
+    var textfieldConstraint: NSLayoutConstraint?
+    
+    
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        filteredList = chatRoom?.chatList ?? []
         
         let nib = UINib(nibName: "ChattingRoomTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "ChattingRoomTableViewCell")
         
         setTableView()
+        
+        chatTextField.backgroundColor = .yellow
+        
+        RxKeyboard.instance.visibleHeight
+            .skip(1)
+            .drive(onNext: { keyboardVisibleHeight in
+                self.chatTextField.snp.updateConstraints {
+                    $0.bottom.equalTo(self.view).inset(keyboardVisibleHeight)
+                }
+            })
+            .disposed(by: disposeBag)
     }
-
+    
     func setTableView() {
         
         tableView.delegate = self
         tableView.dataSource = self
-
+        
         tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
@@ -46,5 +63,9 @@ class ChattingRoomViewController: UIViewController, UITableViewDelegate, UITable
         let chat =  filteredList[indexPath.row]
         cell.configure(chat)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        view.endEditing(true)
     }
 }

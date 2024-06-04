@@ -16,6 +16,10 @@
 		016B9B6C2C0D9959009D2996 /* ChattingRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B9B6B2C0D9959009D2996 /* ChattingRoomViewController.swift */; };
 		016B9B6F2C0D9A4A009D2996 /* ChattingRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016B9B6E2C0D9A4A009D2996 /* ChattingRoomTableViewCell.xib */; };
 		016B9B702C0D9A4A009D2996 /* ChattingRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B9B6D2C0D9A4A009D2996 /* ChattingRoomTableViewCell.swift */; };
+		016B9B852C0F04F0009D2996 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 016B9B842C0F04F0009D2996 /* RxCocoa */; };
+		016B9B872C0F04F0009D2996 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 016B9B862C0F04F0009D2996 /* RxSwift */; };
+		016B9B8A2C0F0508009D2996 /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 016B9B892C0F0508009D2996 /* RxKeyboard */; };
+		016B9B8D2C0F078C009D2996 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 016B9B8C2C0F078C009D2996 /* SnapKit */; };
 		018B254D2BFF283E00CFE307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B254C2BFF283E00CFE307 /* AppDelegate.swift */; };
 		018B254F2BFF283E00CFE307 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B254E2BFF283E00CFE307 /* SceneDelegate.swift */; };
 		018B25512BFF283E00CFE307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B25502BFF283E00CFE307 /* ViewController.swift */; };
@@ -90,7 +94,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016B9B872C0F04F0009D2996 /* RxSwift in Frameworks */,
+				016B9B8A2C0F0508009D2996 /* RxKeyboard in Frameworks */,
+				016B9B852C0F04F0009D2996 /* RxCocoa in Frameworks */,
 				019B3BC92C0355FB00E4F624 /* Kingfisher in Frameworks */,
+				016B9B8D2C0F078C009D2996 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +294,10 @@
 			name = TVC_Assign;
 			packageProductDependencies = (
 				019B3BC82C0355FB00E4F624 /* Kingfisher */,
+				016B9B842C0F04F0009D2996 /* RxCocoa */,
+				016B9B862C0F04F0009D2996 /* RxSwift */,
+				016B9B892C0F0508009D2996 /* RxKeyboard */,
+				016B9B8C2C0F078C009D2996 /* SnapKit */,
 			);
 			productName = TVC_Assign;
 			productReference = 018B25492BFF283E00CFE307 /* TVC_Assign.app */;
@@ -317,6 +329,9 @@
 			mainGroup = 018B25402BFF283E00CFE307;
 			packageReferences = (
 				019B3BC72C0355FB00E4F624 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				016B9B832C0F04F0009D2996 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				016B9B882C0F0508009D2996 /* XCRemoteSwiftPackageReference "RxKeyboard" */,
+				016B9B8B2C0F078C009D2996 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 018B254A2BFF283E00CFE307 /* Products */;
 			projectDirPath = "";
@@ -609,6 +624,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		016B9B832C0F04F0009D2996 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+		016B9B882C0F0508009D2996 /* XCRemoteSwiftPackageReference "RxKeyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxKeyboard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+		016B9B8B2C0F078C009D2996 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 		019B3BC72C0355FB00E4F624 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -620,6 +659,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		016B9B842C0F04F0009D2996 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016B9B832C0F04F0009D2996 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		016B9B862C0F04F0009D2996 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016B9B832C0F04F0009D2996 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		016B9B892C0F0508009D2996 /* RxKeyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016B9B882C0F0508009D2996 /* XCRemoteSwiftPackageReference "RxKeyboard" */;
+			productName = RxKeyboard;
+		};
+		016B9B8C2C0F078C009D2996 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016B9B8B2C0F078C009D2996 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		019B3BC82C0355FB00E4F624 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 019B3BC72C0355FB00E4F624 /* XCRemoteSwiftPackageReference "Kingfisher" */;
