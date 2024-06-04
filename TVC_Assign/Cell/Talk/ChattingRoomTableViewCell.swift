@@ -22,13 +22,14 @@ class ChattingRoomTableViewCell: UITableViewCell {
         
     }
     func setAutoLayout() {
+        
         message.sizeToFit()
         message.lineBreakMode = .byWordWrapping
         message.numberOfLines = 0
-
     }
     
     func configure(_ data: Chat) {
+        
         profileImageView.image = UIImage(named: data.user.profileImage)
         profileImageView.contentMode = .scaleAspectFit
         nameLabel.text = data.user.rawValue

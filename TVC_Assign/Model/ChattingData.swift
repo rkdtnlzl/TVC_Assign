@@ -46,7 +46,7 @@ let mockChatList: [ChatRoom] = [
              chatList: [
                 Chat(user: .hue,
                      date: "2024-06-12 21:30",
-                     message: "열심히 일 하시고 계시는거죠?"),
+                     message: "열심히 일 하시고 계시는거죠?아렁ㄹㄴㅇ,런아러ㅣㅇ너린아러ㅣㄴㅇㄹ"),
                 Chat(user: .bran,
                      date: "2024-06-12 22:32",
                      message: "영등포 캠퍼스 가고싶어요..."),
