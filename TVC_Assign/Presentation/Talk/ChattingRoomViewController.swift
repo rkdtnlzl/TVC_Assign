@@ -45,7 +45,6 @@ class ChattingRoomViewController: UIViewController, UITableViewDelegate, UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChattingRoomTableViewCell", for: indexPath) as! ChattingRoomTableViewCell
         let chat =  filteredList[indexPath.row]
         cell.configure(chat)
-        cell
         return cell
     }
 }
